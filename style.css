@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rating-box {
+    max-width: 350px;
+    height: 370px;
+    background: linear-gradient(hsl(215, 17%, 15%), hsl(216, 15%, 13%));    
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.rate {
+    position: relative;
+}
+
+
+.button-container {
+    display: flex;
+}
+
+#title,
+#ty {
+font-weight: 700;
+font-size: 1.5rem;
+color: hsl(0, 0%, 100%);
+margin-bottom: 1rem;
+}
+
+.img-container {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.rating-button {
+    flex-basis: 0;
+    flex-grow: 1;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0.35rem;
+    cursor: pointer;
+}
+
+.rating-button:hover,
+.rating-button:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);     
+}
+
+#submit-button {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 100px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);    
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);     
+}
+
+.submited > .rating-box > p {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.submited > .rating-box > div {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.text-container {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100px;
+    padding: 1rem;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.text-container>p {
+    text-align: center;
+    color:hsl(25, 97%, 53%);   
+}
+
+.submited {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
